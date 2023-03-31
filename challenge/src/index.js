@@ -18,14 +18,15 @@ const colors = [
   "#ffd32a",
   "#ff3f34",
 ];
-const body = document.querySelector("body");
 const btn = document.querySelector("button");
 
-function colorChange() {
-  const color1 = colors[Math.floor(Math.random() * colors.length)];
-  const filtercolors = colors.filter((color) => color !== color1);
-  const color2 = filtercolors[Math.floor(Math.random() * filtercolors.length)];
-  body.style.background = `linear-gradient(0.25turn, ${color1}, ${color2})`;
+function handleClick() {
+  const a = colors[Math.floor(Math.random() * colors.length)];
+  const b = colors[Math.floor(Math.random() * colors.length)];
+  if (a === b) {
+    return handleClick();
+  }
+  document.body.style.background = `linear-gradient(to left, ${a}, ${b})`;
 }
 
-btn.addEventListener("click", colorChange);
+btn.addEventListener("click", handleClick);

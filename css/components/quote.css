@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 60px;
+  transform: translateY(15px);
 }
 
 #quote span:nth-child(2) {

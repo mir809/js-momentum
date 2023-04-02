@@ -50,22 +50,11 @@ const quotes = [
     author: "샤론 드골",
   },
 ];
-// quote와 author로 구성된 object들이 나열된 배열
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
-//html에서 #quote라는 id를 가진 객체에 있는 span중
-//첫번째, 마지막 객체를 각각 불러옴
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-//'quotes'배열의 구성요소 수만큼 random에 곱해
-//랜덤한 숫자 1개를 받은뒤 내림(floor)하여
-// 해당 숫자에 해당하는 순서의 요소를 불러옴
-// => 랜덤한 명언 불러옴
 
 quote.innerText = ` "${todaysQuote.quote}"`;
 author.innerText = `-${todaysQuote.author}`;
-//'quotes'배열의 요소 중 'todaysQuote'에 할당된 요소의
-//quote 와 author를 각각 html객체에 대입함
-//('quotes'은 quote와 author가 포함된 object로
-//구성되어 있음)

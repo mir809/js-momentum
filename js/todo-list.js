@@ -50,7 +50,7 @@ function todoListBoxOpen() {
     alarm.classList.add("hidden");
   }
   alarmCount.innerText = toDos.length;
-  //ClassArr = todoBox.classList;
+
   localStorage.setItem(toDoBox_KEY, JSON.stringify(todoBox.classList));
 }
 

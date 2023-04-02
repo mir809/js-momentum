@@ -1,3 +1,5 @@
+const todoPart = document.querySelector(".todo");
+
 const todoForm = document.getElementById("todo-form");
 const todoInput = todoForm.querySelector("input");
 const todoList = document.getElementById("todo-list");
@@ -58,6 +60,7 @@ function paintTodo(newTodoObject) {
   const btn = document.createElement("button");
   btn.innerText = "❌";
   //html요소 'li','span','button'을 생성
+
   todoList.appendChild(list);
   list.appendChild(text);
   list.appendChild(btn);
@@ -65,6 +68,20 @@ function paintTodo(newTodoObject) {
   //list의 하위 요소로 text와 btn을 추가 해줌
   btn.addEventListener("click", deleteTodo);
   //btn을 눌렸을 시 todo를 제거 하기 위한 함수를 불러옴
+  btn.addEventListener("mouseenter", hover);
+  btn.addEventListener("mouseleave", leave);
+
+  function hover() {
+    text.style.textDecoration = `line-through`;
+    text.style.backgroundColor = `gray`;
+    text.style.opacity = `0.3`;
+    text.style.borderRadius = `8px`;
+  }
+  function leave() {
+    text.style.textDecoration = `none`;
+    text.style.backgroundColor = `transparent`;
+    text.style.opacity = `1`;
+  }
 }
 
 function todoSubmit(submit) {
@@ -94,6 +111,7 @@ function todoSubmit(submit) {
   //화면에 나타내주기 위한 함수 실행
   saveToDos();
   //입력된 값을 브라우저에 저장하기 위한 함수 실행
+  arlamStack();
 }
 
 todoForm.addEventListener("submit", todoSubmit);

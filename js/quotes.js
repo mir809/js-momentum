@@ -1,3 +1,5 @@
+const quotePart = document.querySelector("#quote");
+
 const quotes = [
   {
     quote: " 준비하지 않은 자는 기회가 와도 소용없다.",
@@ -61,7 +63,7 @@ const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 // 해당 숫자에 해당하는 순서의 요소를 불러옴
 // => 랜덤한 명언 불러옴
 
-quote.innerText = todaysQuote.quote;
+quote.innerText = ` "${todaysQuote.quote}"`;
 author.innerText = `-${todaysQuote.author}`;
 //'quotes'배열의 요소 중 'todaysQuote'에 할당된 요소의
 //quote 와 author를 각각 html객체에 대입함

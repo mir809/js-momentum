@@ -1,0 +1,32 @@
+.null-space {
+  width: 100%;
+
+  flex: 0 1 10%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.main-box {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 70%;
+  height: 100%;
+  padding: 20px 0px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  border-radius: 30px;
+  border: 3px dashed gray;
+}

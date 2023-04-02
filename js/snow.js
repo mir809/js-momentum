@@ -20,7 +20,3 @@ function makeSnow() {
     makeSnow();
   }, (duration + delay) * 1000);
 }
-
-for (let index = 0; index < 50; index++) {
-  setTimeout(makeSnow, 500 * index);
-}

@@ -1,0 +1,46 @@
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+#quote span:nth-child(2) {
+  color: rgb(199, 199, 199);
+  animation: alternate 3s forwards;
+}
+
+@keyframes quoteup {
+  from {
+  }
+  to {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes authordown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes quotedown {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes authorup {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -36,3 +36,5 @@ document.body.prepend(bgImage);
 const bgImage = document.querySelector("img");
 bgImage.src = `img/${choseimage}`;
 */
+
+const img = document.querySelector("img");

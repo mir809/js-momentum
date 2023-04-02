@@ -1,0 +1,23 @@
+.todo {
+  width: 350px;
+  margin-top: 10px;
+}
+
+#todo-form input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  font-size: 25px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+#todo-form input:focus {
+  outline: none;
+}

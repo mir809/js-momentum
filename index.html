@@ -4,46 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum</title>
+    <title>JS-Momentum</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloudfront.net%2Fmedia%2Fpublic%2Fbadges%2FJS.png&w=1920&q=75"
+    />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
+    <header class="top-bar">
+      <div id="today"></div>
+      <div id="weather" class="apple">
+        <div class="temp"></div>
+        <div class="city"></div>
+      </div>
+    </header>
 
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
+    <div class="null-space"></div>
 
-    <h1 id="greeting" class="hidden"></h1>
+    <main>
+      <div class="main-box"></div>
 
-    <form id="todo-form">
-      <input required type="text" placeholder="Write a To Do and press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
+      <div class="time">
+        <h2 id="clock"></h2>
+      </div>
 
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+      <div class="user">
+        <form id="login-form" class="hidden">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+        </form>
+        <h1 id="greeting" class="hidden" class="apple"></h1>
+      </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="todo">
+        <form id="todo-form">
+          <input required type="text" placeholder="What Should You Do Today?" />
+        </form>
+      </div>
 
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+
+    <div class="null-space"></div>
+
+    <footer>
+      <span>Todo List</span>
+      <div class="Alarm hidden">
+        <span></span>
+        <div class="small-semo"></div>
+      </div>
+      <div class="todo-box hidden">
+        <div class="list-title">
+          <span>❤️ Todo List ❤️</span>
+        </div>
+        <div class="list-box">
+          <ul id="todo-list"></ul>
+        </div>
+        <div class="semo"></div>
+      </div>
+    </footer>
+
     <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+
     <script src="js/todo.js"></script>
+    <script src="js/todo-list.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/today.js"></script>
     <script src="js/snow.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/greeting.js"></script>
   </body>
 </html>

@@ -58,3 +58,16 @@ const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = ` "${todaysQuote.quote}"`;
 author.innerText = `-${todaysQuote.author}`;
+
+function diplayAuthor() {
+  quote.style.animation = `quoteup 0.2s linear forwards`;
+  author.style.animation = `authorDown 0.2s linear forwards`;
+}
+
+function hiddenAuthor() {
+  quote.style.animation = `quotedown 0.2s linear forwards`;
+  author.style.animation = `authorUp 0.2s linear forwards`;
+}
+
+quotePart.addEventListener("mouseenter", diplayAuthor);
+quotePart.addEventListener("mouseleave", hiddenAuthor);

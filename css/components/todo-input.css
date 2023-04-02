@@ -1,6 +1,6 @@
 .todo {
-  width: 350px;
-  margin-top: 10px;
+  width: 50vw;
+  transform: translateY(10%);
 }
 
 #todo-form input {
@@ -8,9 +8,11 @@
   background: none;
   border: none;
   border-bottom: 2px solid whitesmoke;
-  font-size: 25px;
+
   color: whitesmoke;
   text-align: center;
+
+  font-size: 60%;
 }
 
 #todo-form input::placeholder {

@@ -1,5 +1,4 @@
-// 내가 추가한 내용
-const todoListBtn = document.querySelector("footer>span");
+const todoListBtn = document.querySelector("footer > span:nth-child(2)");
 const todoBox = document.querySelector(".todo-box");
 
 let ClassArr = [];

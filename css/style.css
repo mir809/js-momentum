@@ -5,6 +5,7 @@
 @import "components/todo-input.css";
 @import "components/quote.css";
 @import "components/todo-list.css";
+@import "components/bottom-var.css";
 
 /* screen */
 @import "screen/snow.css";
@@ -29,14 +30,14 @@ body {
   display: none;
 }
 
-.visi {
-  visibility: hidden;
-}
-
 .apple {
   font-family: system-ui, -apple-system;
 }
 
 .filter {
   filter: blur(5px);
+}
+
+.low {
+  z-index: -100;
 }
